@@ -3,26 +3,25 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'echo "Hello World"'
-                sh '''
-                    echo "build stage"
-                '''
+                 echo "Hello World"
+                echo "build stage"
+             
             }
         }
         stage('deploy') {
             steps {
                 
-                sh '''
+            
                     echo "deploy stage"
-                '''
+                
             }
         }
         stage('configchange') {
             steps {
                 
-                sh '''
+                
                     echo "configchange stage"
-                '''
+                
             }
         }
     }
